@@ -1,6 +1,6 @@
+// import Newadd from './components/Newadd';
+import {useState,useEffect} from 'react'
 
-import React, { useState, useEffect } from 'react';
-import './App.css';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -108,7 +108,12 @@ function App() {
         </tbody>
       </table>
 
-      {showModal && (
+{/* {showModal && <Newadd/>} */}
+
+
+
+
+     {showModal && (
         <div className="modal">
           <div className="modal-content">
             <span className="close" onClick={() => setShowModal(false)}>&times;</span>
@@ -142,7 +147,7 @@ function App() {
             </form>
           </div>
         </div>
-      )}
+      )} 
     </div>
   );
 }
